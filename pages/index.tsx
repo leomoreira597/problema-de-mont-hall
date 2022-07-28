@@ -4,7 +4,7 @@ import React from "react";
 import { atualizarPortas, criarPortas } from "../functions/portas";
 
 export default function Home() {
-  const [portas, setPortas] = React.useState(criarPortas(3,2))
+  const [portas, setPortas] = React.useState(criarPortas(4,3))
 
   function renderizarPortas(){
     return portas.map(porta => {
