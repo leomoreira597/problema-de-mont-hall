@@ -18,7 +18,7 @@ export default function Jogo() {
 
     function renderizarPortas() {
         return portas.map(porta => {
-            return <Porta value={porta} onChange={novaPorta => {
+            return <Porta key={porta} value={porta} onChange={novaPorta => {
                 setPortas(atualizarPortas(portas, novaPorta))
             }} />
 
